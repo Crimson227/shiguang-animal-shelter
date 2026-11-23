@@ -1,0 +1,25 @@
+{
+  "name": "animal-shelter-api",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "setup": "node setup.js",
+    "test": "node --test tests/ai-service.test.js tests/community-content.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "express": "^4.21.2",
+    "express-session": "^1.18.2",
+    "mysql2": "^3.15.3",
+    "sharp": "0.35.5"
+  },
+  "overrides": {
+    "express": {
+      "body-parser": "1.20.9",
+      "qs": "6.16.1"
+    }
+  }
+}

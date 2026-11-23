@@ -1,0 +1,5 @@
+@font-face{font-family:'Shiguang Serif';font-style:normal;font-weight:400;font-display:swap;src:url('/catalog-c/fonts/chinese-0.woff2') format('woff2')}
+@font-face{font-family:'Shiguang Serif';font-style:normal;font-weight:600;font-display:swap;src:url('/catalog-c/fonts/chinese-1.woff2') format('woff2')}
+@font-face{font-family:'Shiguang Script';font-style:italic;font-weight:400;font-display:swap;src:url('/catalog-c/fonts/italic-0.woff2') format('woff2')}
+
+.application-guide-link{display:flex;gap:8px;align-items:center;min-height:44px;width:fit-content;font-size:14px;color:#b83f2c;text-underline-offset:5px}.public-animal-info .application-guide-link{margin-top:20px}.application-import .application-guide-link{margin-top:14px}

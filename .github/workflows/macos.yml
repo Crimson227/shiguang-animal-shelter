@@ -1,0 +1,75 @@
+name: Mac 本地运行验证
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  install:
+    name: '${{ matrix.chip }} · macOS 15'
+    runs-on: '${{ matrix.runner }}'
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { runner: macos-15, chip: Apple Silicon }
+          - { runner: macos-15-intel, chip: Intel }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: 安装 MySQL 8.4 与浏览器测试工具
+        env:
+          HOMEBREW_NO_AUTO_UPDATE: '1'
+          HOMEBREW_NO_INSTALL_CLEANUP: '1'
+        run: |
+          if [[ "$(uname -m)" == arm64 ]]; then
+            brew install mysql@8.4
+            echo "MYSQL_BIN=$(brew --prefix mysql@8.4)/bin" >> "$GITHUB_ENV"
+          else
+            mysql_dir="$RUNNER_TEMP/mysql-8.4.7"
+            mkdir -p "$mysql_dir"
+            curl --fail --silent --show-error --location --retry 3 \
+              https://cdn.mysql.com/archives/mysql-8.4/mysql-8.4.7-macos15-x86_64.tar.gz \
+              -o "$RUNNER_TEMP/mysql-mac.tar.gz"
+            tar -xzf "$RUNNER_TEMP/mysql-mac.tar.gz" -C "$mysql_dir" --strip-components=1
+            echo "MYSQL_BIN=$mysql_dir/bin" >> "$GITHUB_ENV"
+          fi
+          npm install --prefix "$RUNNER_TEMP/browser-check" --no-audit --no-fund playwright-core@1.56.1
+      - name: 从空目录启动、登录并检查重启后的数据
+        env:
+          SHELTER_OPEN_BROWSER: '0'
+          CHROME_EXECUTABLE: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+        run: |
+          export NODE_PATH="$RUNNER_TEMP/browser-check/node_modules"
+          export ADMIN_PASSWORD="$(openssl rand -hex 20)"
+          echo "::add-mask::$ADMIN_PASSWORD"
+          export SHELTER_TEST_URL=http://127.0.0.1:27470
+          launcher_pid=''
+          stop_app() {
+            if [[ -n "$launcher_pid" ]]; then
+              kill -TERM "$launcher_pid" 2>/dev/null || true
+              wait "$launcher_pid" 2>/dev/null || true
+              launcher_pid=''
+            fi
+          }
+          trap stop_app EXIT
+          for attempt in 0 1; do
+            bash start-mac.command > "$RUNNER_TEMP/shelter-start.log" 2>&1 &
+            launcher_pid=$!
+            for ((i=0; i<180; i++)); do
+              if curl -fsS "$SHELTER_TEST_URL/api/health" >/dev/null 2>&1; then break; fi
+              if ! kill -0 "$launcher_pid" 2>/dev/null; then cat "$RUNNER_TEMP/shelter-start.log"; exit 1; fi
+              sleep 2
+            done
+            curl --fail --silent "$SHELTER_TEST_URL/api/health" || { cat "$RUNNER_TEMP/shelter-start.log"; exit 1; }
+            CHECK_RESTART="$attempt" node .github/check-install.cjs
+            stop_app
+          done
+          npm --prefix server test
+          node --experimental-strip-types --test client/tests/*.mjs

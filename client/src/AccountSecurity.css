@@ -1,0 +1,46 @@
+.security-page { min-height: 100dvh; background: #f3f4f0; display: grid; place-items: center; padding: 30px 18px; }
+.security-panel { width: min(520px,100%); background: #fff; padding: clamp(28px,5vw,55px); border: 1px solid #e1e4dc; }
+.security-back { display: inline-flex; align-items: center; gap: 8px; color: #5e675e; font-size: 13px; text-decoration: none; margin-bottom: 36px; }
+.security-login-link { display: inline-block; margin-top: 19px; color: #a33124; font-size: 13px; text-decoration: none; }
+.security-login-link:hover { text-decoration: underline; }
+.sidebar-foot .user-info a { display: inline-block; margin-top: 4px; color: #c5cec5; font-size: 11px; text-decoration: none; }
+.sidebar-foot .user-info a:hover { color: #fff; text-decoration: underline; }
+.security-icon { color: #b83829; margin-bottom: 18px; }
+.security-panel h1, .security-account h1 { font-size: clamp(27px,4vw,36px); margin: 0 0 12px; line-height: 1.15; }
+.security-panel p, .security-account p { color: #657066; line-height: 1.7; font-size: 14px; margin: 0 0 28px; }
+.security-panel form, .security-section form { display: grid; gap: 18px; }
+.security-panel label, .security-section label { display: grid; gap: 8px; color: #333d34; font-size: 13px; font-weight: 700; }
+.security-panel input, .security-section input { width: 100%; min-height: 46px; padding: 0 13px; border: 1px solid #c9cec6; background: #fff; color: #202820; font: inherit; }
+.security-panel input:focus-visible, .security-section input:focus-visible { outline: 2px solid #b83829; outline-offset: 2px; }
+.security-text-button { border: 0; background: none; color: #a33124; cursor: pointer; padding: 5px 0; text-align: left; font: inherit; font-size: 13px; }
+.security-text-button:hover { text-decoration: underline; }
+.security-error, .security-success { padding: 12px 15px; margin-bottom: 20px; font-size: 13px; line-height: 1.5; }
+.security-error { background: #fcecea; color: #84291e; }
+.security-success { background: #e7f1e7; color: #244e31; }
+.security-hint { border-top: 1px solid #e1e4dc; margin-top: 30px; padding-top: 17px; color: #657066; font-size: 12px; line-height: 1.65; }
+.security-account { max-width: 940px; margin: 0 auto; }
+.security-account.member-account { padding: 45px 22px 90px; }
+.security-account-heading { display: flex; align-items: start; justify-content: space-between; gap: 20px; margin-bottom: 25px; }
+.security-account-heading span { display: block; color: #b83829; font-size: 11px; font-weight: 700; margin-bottom: 9px; }
+.security-account-heading a { display: inline-flex; align-items: center; gap: 7px; color: #a33124; text-decoration: none; font-size: 13px; white-space: nowrap; }
+.security-section { background: #fff; border: 1px solid #e1e4dc; padding: clamp(23px,4vw,38px); margin-bottom: 20px; }
+.security-section h2 { margin: 0 0 20px; font-size: 20px; }
+.security-section form { max-width: 420px; }
+.security-section .button { justify-self: start; }
+.security-request-list { display: grid; gap: 1px; background: #e1e4dc; }
+.security-request-list article { display: flex; align-items: center; justify-content: space-between; gap: 20px; background: #fff; padding: 18px; }
+.security-request-list article>div { display: grid; gap: 6px; }
+.security-request-list span, .security-request-list small { color: #657066; font-size: 12px; }
+.security-request-list article>div:last-child { display: flex; align-items: center; gap: 12px; }
+.security-empty { color: #657066; font-size: 13px; padding: 25px; background: #f5f6f3; }
+.security-code { padding: 16px; background: #f0f2ee; display: grid; gap: 7px; margin-bottom: 20px; }
+.security-code span { color: #657066; font-size: 12px; }
+.security-code strong { font-size: 24px; letter-spacing: .13em; font-variant-numeric: tabular-nums; }
+.security-code strong { overflow-wrap: anywhere; }
+.security-code small { color: #4e594f; line-height: 1.6; }
+.security-reset { display: grid; gap: 10px; justify-items: start; }
+.security-reset .security-error, .security-reset .security-code { margin: 0; }
+.history-account-reset { border-top: 1px solid #dfe3dd; margin-top: 22px; padding-top: 18px; }
+.history-account-reset h3 { margin: 0 0 7px; font-size: 15px; }
+.history-account-reset p { margin: 0 0 14px; }
+@media(max-width:650px) { .security-account-heading,.security-request-list article { flex-direction: column; align-items: stretch; } .security-request-list article>div:last-child { flex-wrap: wrap; } .member-page .member-top { height: auto; min-height: 76px; flex-wrap: wrap; gap: 3px; padding-top: 12px; padding-bottom: 9px; } .member-page .member-top nav { width: 100%; justify-content: space-between; gap: 9px; } }

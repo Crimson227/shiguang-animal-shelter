@@ -1,0 +1,7 @@
+{
+  "baseURL": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "apiKey": "",
+  "maxDailyRequests": 100,
+  "maxOutputTokens": 1000
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "animalID": 45,
+    "pictureURL": "imgs/animals/editorial-20261022/45-cover.webp"
+  },
+  {
+    "animalID": 44,
+    "pictureURL": "imgs/animals/editorial-20261022/44-cover.webp"
+  },
+  {
+    "animalID": 43,
+    "pictureURL": "imgs/animals/demo-cat-13.jpg"
+  },
+  {
+    "animalID": 42,
+    "pictureURL": "imgs/animals/demo-dog-14.jpg"
+  },
+  {
+    "animalID": 41,
+    "pictureURL": "imgs/animals/editorial-20261022/41-cover.webp"
+  },
+  {
+    "animalID": 39,
+    "pictureURL": "imgs/animals/demo-cat-12.jpg"
+  },
+  {
+    "animalID": 38,
+    "pictureURL": "imgs/animals/demo-cat-11.jpg"
+  },
+  {
+    "animalID": 37,
+    "pictureURL": "imgs/animals/demo-cat-10.jpg"
+  },
+  {
+    "animalID": 36,
+    "pictureURL": "imgs/animals/demo-cat-09.jpg"
+  },
+  {
+    "animalID": 35,
+    "pictureURL": "imgs/animals/demo-cat-08.jpg"
+  },
+  {
+    "animalID": 34,
+    "pictureURL": "imgs/animals/demo-cat-07.jpg"
+  },
+  {
+    "animalID": 33,
+    "pictureURL": "imgs/animals/demo-cat-06.jpg"
+  },
+  {
+    "animalID": 32,
+    "pictureURL": "imgs/animals/demo-cat-05.jpg"
+  },
+  {
+    "animalID": 31,
+    "pictureURL": "imgs/animals/demo-cat-04.jpg"
+  },
+  {
+    "animalID": 30,
+    "pictureURL": "imgs/animals/demo-cat-03.jpg"
+  },
+  {
+    "animalID": 29,
+    "pictureURL": "imgs/animals/demo-cat-02.jpg"
+  },
+  {
+    "animalID": 28,
+    "pictureURL": "imgs/animals/demo-cat-01.jpg"
+  },
+  {
+    "animalID": 27,
+    "pictureURL": "imgs/animals/editorial-20261022/27-cover.webp"
+  },
+  {
+    "animalID": 26,
+    "pictureURL": "imgs/animals/demo-dog-11.jpg"
+  },
+  {
+    "animalID": 25,
+    "pictureURL": "imgs/animals/demo-dog-10.jpg"
+  },
+  {
+    "animalID": 24,
+    "pictureURL": "imgs/animals/demo-dog-09.jpg"
+  },
+  {
+    "animalID": 23,
+    "pictureURL": "imgs/animals/demo-dog-08.jpg"
+  },
+  {
+    "animalID": 22,
+    "pictureURL": "imgs/animals/demo-dog-07.jpg"
+  },
+  {
+    "animalID": 21,
+    "pictureURL": "imgs/animals/demo-dog-06.jpg"
+  },
+  {
+    "animalID": 20,
+    "pictureURL": "imgs/animals/demo-dog-05.jpg"
+  },
+  {
+    "animalID": 19,
+    "pictureURL": "imgs/animals/demo-dog-04.jpg"
+  },
+  {
+    "animalID": 18,
+    "pictureURL": "imgs/animals/demo-dog-03.jpg"
+  },
+  {
+    "animalID": 17,
+    "pictureURL": "imgs/animals/demo-dog-02.jpg"
+  },
+  {
+    "animalID": 10,
+    "pictureURL": "imgs/animals/existing-10.jpg"
+  },
+  {
+    "animalID": 9,
+    "pictureURL": "imgs/animals/existing-9.jpg"
+  },
+  {
+    "animalID": 8,
+    "pictureURL": "imgs/animals/existing-8.jpg"
+  },
+  {
+    "animalID": 7,
+    "pictureURL": "imgs/animals/existing-7.jpg"
+  },
+  {
+    "animalID": 6,
+    "pictureURL": "imgs/animals/existing-6.jpg"
+  },
+  {
+    "animalID": 5,
+    "pictureURL": "imgs/animals/existing-5.jpg"
+  },
+  {
+    "animalID": 3,
+    "pictureURL": "imgs/animals/existing-3.jpg"
+  },
+  {
+    "animalID": 2,
+    "pictureURL": "imgs/animals/existing-2.jpg"
+  }
+]

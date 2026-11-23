@@ -1,0 +1,408 @@
+[
+  {
+    "animalID": 1,
+    "animalName": "旺财",
+    "localFile": "imgs/animals/existing-1.jpg",
+    "bytes": 48712,
+    "sourceUrl": "https://images.unsplash.com/photo-1620001796685-adf7110fe1a7?w=500&q=80",
+    "sourceApi": "Original project",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 2,
+    "animalName": "乐乐",
+    "localFile": "imgs/animals/existing-2.jpg",
+    "bytes": 27363,
+    "sourceUrl": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=500&q=80",
+    "sourceApi": "Original project",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 3,
+    "animalName": "不爽猫",
+    "localFile": "imgs/animals/existing-3.jpg",
+    "bytes": 82127,
+    "sourceUrl": "https://images.unsplash.com/photo-1513245543132-31f507417b26?w=500&q=80",
+    "sourceApi": "Original project",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 4,
+    "animalName": "煤球",
+    "localFile": "imgs/animals/existing-4.jpg",
+    "bytes": 23940,
+    "sourceUrl": "https://images.unsplash.com/photo-1592652426689-4e4f12c4aef5?w=500&q=80",
+    "sourceApi": "Original project",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 5,
+    "animalName": "史酷比",
+    "localFile": "imgs/animals/existing-5.jpg",
+    "bytes": 41999,
+    "sourceUrl": "https://images.unsplash.com/photo-1592424701959-07bd1a04dc47?w=500&q=80",
+    "sourceApi": "Original project",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 6,
+    "animalName": "豆豆",
+    "localFile": "imgs/animals/existing-6.jpg",
+    "bytes": 41182,
+    "sourceUrl": "https://images.unsplash.com/photo-1583511655826-05700d52f4d9?w=500&q=80",
+    "sourceApi": "Original project",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 7,
+    "animalName": "咪咪",
+    "localFile": "imgs/animals/existing-7.jpg",
+    "bytes": 22121,
+    "sourceUrl": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=500&q=80",
+    "sourceApi": "Original project",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 8,
+    "animalName": "大黄",
+    "localFile": "imgs/animals/existing-8.jpg",
+    "bytes": 77799,
+    "sourceUrl": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=500&q=80",
+    "sourceApi": "Original project",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 9,
+    "animalName": "不仅",
+    "localFile": "imgs/animals/existing-9.jpg",
+    "bytes": 57147,
+    "sourceUrl": "https://images.dog.ceo/breeds/mexicanhairless/n02113978_2306.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 10,
+    "animalName": "小白",
+    "localFile": "imgs/animals/existing-10.jpg",
+    "bytes": 63556,
+    "sourceUrl": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=500&q=80",
+    "sourceApi": "Original project",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 11,
+    "animalName": "雪球",
+    "localFile": "imgs/animals/existing-11.jpg",
+    "bytes": 185516,
+    "sourceUrl": "https://images.dog.ceo/breeds/cattledog-australian/img_1062.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 12,
+    "animalName": "黑豹",
+    "localFile": "imgs/animals/existing-12.jpg",
+    "bytes": 74560,
+    "sourceUrl": "https://images.dog.ceo/breeds/cockapoo/george-tongue.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 13,
+    "animalName": "加菲",
+    "localFile": "imgs/animals/existing-13.jpg",
+    "bytes": 47862,
+    "sourceUrl": "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&q=80",
+    "sourceApi": "Original project",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 14,
+    "animalName": "奥利奥",
+    "localFile": "imgs/animals/existing-14.jpg",
+    "bytes": 53617,
+    "sourceUrl": "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=500&q=80",
+    "sourceApi": "Original project",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 15,
+    "animalName": "可乐",
+    "localFile": "imgs/animals/existing-15.jpg",
+    "bytes": 23234,
+    "sourceUrl": "https://images.dog.ceo/breeds/komondor/n02105505_1024.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 16,
+    "animalName": "阿福",
+    "localFile": "imgs/animals/demo-dog-01.jpg",
+    "bytes": 54805,
+    "sourceUrl": "https://images.dog.ceo/breeds/labrador/dog4.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 17,
+    "animalName": "麦兜",
+    "localFile": "imgs/animals/demo-dog-02.jpg",
+    "bytes": 12792,
+    "sourceUrl": "https://images.dog.ceo/breeds/beagle/n02088364_12710.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 18,
+    "animalName": "福宝",
+    "localFile": "imgs/animals/demo-dog-03.jpg",
+    "bytes": 81500,
+    "sourceUrl": "https://images.dog.ceo/breeds/pug/n02110958_630.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 19,
+    "animalName": "点点",
+    "localFile": "imgs/animals/demo-dog-04.jpg",
+    "bytes": 367297,
+    "sourceUrl": "https://images.dog.ceo/breeds/dalmatian/cooper1.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 20,
+    "animalName": "虎子",
+    "localFile": "imgs/animals/demo-dog-05.jpg",
+    "bytes": 34726,
+    "sourceUrl": "https://images.dog.ceo/breeds/boxer/n02108089_7259.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 21,
+    "animalName": "小米",
+    "localFile": "imgs/animals/demo-dog-06.jpg",
+    "bytes": 26783,
+    "sourceUrl": "https://images.dog.ceo/breeds/chihuahua/n02085620_3407.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 22,
+    "animalName": "星仔",
+    "localFile": "imgs/animals/demo-dog-07.jpg",
+    "bytes": 28715,
+    "sourceUrl": "https://images.dog.ceo/breeds/husky/n02110185_2368.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 23,
+    "animalName": "柚子",
+    "localFile": "imgs/animals/demo-dog-08.jpg",
+    "bytes": 43045,
+    "sourceUrl": "https://images.dog.ceo/breeds/poodle-miniature/n02113712_2451.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 24,
+    "animalName": "棉花",
+    "localFile": "imgs/animals/demo-dog-09.jpg",
+    "bytes": 43278,
+    "sourceUrl": "https://images.dog.ceo/breeds/samoyed/n02111889_4142.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 25,
+    "animalName": "元宝",
+    "localFile": "imgs/animals/demo-dog-10.jpg",
+    "bytes": 76976,
+    "sourceUrl": "https://images.dog.ceo/breeds/shiba/shiba-18.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 26,
+    "animalName": "闪电",
+    "localFile": "imgs/animals/demo-dog-11.jpg",
+    "bytes": 71051,
+    "sourceUrl": "https://images.dog.ceo/breeds/whippet/n02091134_12272.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 27,
+    "animalName": "蝴蝶",
+    "localFile": "imgs/animals/demo-dog-12.jpg",
+    "bytes": 14709,
+    "sourceUrl": "https://images.dog.ceo/breeds/papillon/n02086910_3769.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 28,
+    "animalName": "奶糖",
+    "localFile": "imgs/animals/demo-cat-01.jpg",
+    "bytes": 844661,
+    "sourceUrl": "https://cdn2.thecatapi.com/images/MTkyMDQxNg.jpg",
+    "sourceApi": "The Cat API",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 29,
+    "animalName": "芝麻",
+    "localFile": "imgs/animals/demo-cat-02.jpg",
+    "bytes": 61684,
+    "sourceUrl": "https://cdn2.thecatapi.com/images/dnb.jpg",
+    "sourceApi": "The Cat API",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 30,
+    "animalName": "团子",
+    "localFile": "imgs/animals/demo-cat-03.jpg",
+    "bytes": 41871,
+    "sourceUrl": "https://cdn2.thecatapi.com/images/OhTkBTPnD.jpg",
+    "sourceApi": "The Cat API",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 31,
+    "animalName": "栗子",
+    "localFile": "imgs/animals/demo-cat-04.jpg",
+    "bytes": 379124,
+    "sourceUrl": "https://cdn2.thecatapi.com/images/3u9.jpg",
+    "sourceApi": "The Cat API",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 32,
+    "animalName": "云朵",
+    "localFile": "imgs/animals/demo-cat-05.jpg",
+    "bytes": 119884,
+    "sourceUrl": "https://cdn2.thecatapi.com/images/dqu.jpg",
+    "sourceApi": "The Cat API",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 33,
+    "animalName": "布丁",
+    "localFile": "imgs/animals/demo-cat-06.jpg",
+    "bytes": 103037,
+    "sourceUrl": "https://cdn2.thecatapi.com/images/32c.jpg",
+    "sourceApi": "The Cat API",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 34,
+    "animalName": "蓝莓",
+    "localFile": "imgs/animals/demo-cat-07.jpg",
+    "bytes": 126196,
+    "sourceUrl": "https://cdn2.thecatapi.com/images/MTgyNDg4Ng.jpg",
+    "sourceApi": "The Cat API",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 35,
+    "animalName": "糯米",
+    "localFile": "imgs/animals/demo-cat-08.jpg",
+    "bytes": 545172,
+    "sourceUrl": "https://cdn2.thecatapi.com/images/MTg0MTYyOQ.jpg",
+    "sourceApi": "The Cat API",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 36,
+    "animalName": "泡芙",
+    "localFile": "imgs/animals/demo-cat-09.jpg",
+    "bytes": 15761,
+    "sourceUrl": "https://cdn2.thecatapi.com/images/MTgwMzkyNg.jpg",
+    "sourceApi": "The Cat API",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 37,
+    "animalName": "可可",
+    "localFile": "imgs/animals/demo-cat-10.jpg",
+    "bytes": 87588,
+    "sourceUrl": "https://cdn2.thecatapi.com/images/MTY4OTA3OQ.jpg",
+    "sourceApi": "The Cat API",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 38,
+    "animalName": "月牙",
+    "localFile": "imgs/animals/demo-cat-11.jpg",
+    "bytes": 420107,
+    "sourceUrl": "https://cdn2.thecatapi.com/images/MTc5MTMxNw.jpg",
+    "sourceApi": "The Cat API",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 39,
+    "animalName": "薄荷",
+    "localFile": "imgs/animals/demo-cat-12.jpg",
+    "bytes": 416488,
+    "sourceUrl": "https://cdn2.thecatapi.com/images/MTY4OTM4MA.jpg",
+    "sourceApi": "The Cat API",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 41,
+    "animalName": "山竹",
+    "localFile": "imgs/animals/demo-dog-13.jpg",
+    "bytes": 28148,
+    "sourceUrl": "https://images.dog.ceo/breeds/pomeranian/n02112018_1561.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 42,
+    "animalName": "阿洛",
+    "localFile": "imgs/animals/demo-dog-14.jpg",
+    "bytes": 31141,
+    "sourceUrl": "https://images.dog.ceo/breeds/malamute/n02110063_12449.jpg",
+    "sourceApi": "Dog CEO",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 43,
+    "animalName": "松果",
+    "localFile": "imgs/animals/demo-cat-13.jpg",
+    "bytes": 100251,
+    "sourceUrl": "https://cdn2.thecatapi.com/images/xYLoht4o_.jpg",
+    "sourceApi": "The Cat API",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 44,
+    "animalName": "琥珀",
+    "localFile": "imgs/animals/demo-cat-14.jpg",
+    "bytes": 292430,
+    "sourceUrl": "https://cdn2.thecatapi.com/images/MTg3MzEyOA.jpg",
+    "sourceApi": "The Cat API",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 45,
+    "animalName": "小鹿",
+    "localFile": "imgs/animals/demo-cat-15.jpg",
+    "bytes": 34236,
+    "sourceUrl": "https://cdn2.thecatapi.com/images/q8.jpg",
+    "sourceApi": "The Cat API",
+    "importedAt": "2026-10-14"
+  },
+  {
+    "animalID": 46,
+    "animalName": "团团",
+    "localFile": "imgs/animals/tuantuan.png",
+    "bytes": 2547685,
+    "sourceUrl": null,
+    "sourceApi": "OpenAI imagegen",
+    "importedAt": "2026-10-15",
+    "description": "Fictional medium-sized mixed-breed dog portrait generated for the shelter project."
+  }
+]

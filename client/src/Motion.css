@@ -1,0 +1,140 @@
+/* A shared motion language for the archive and daily shelter work. */
+:root {
+  --motion-ease-in-out: cubic-bezier(.77, 0, .175, 1);
+}
+
+@keyframes work-surface-enter {
+  from { opacity: .35; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes work-admin-enter {
+  from { transform: translateY(8px); }
+  to { transform: translateY(0); }
+}
+@keyframes work-row-enter {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes work-photo-enter {
+  from { opacity: .55; transform: scale(1.045); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes work-dialog-enter {
+  from { opacity: 0; transform: translateY(20px) scale(.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes work-backdrop-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes work-soft-enter {
+  from { opacity: .55; }
+  to { opacity: 1; }
+}
+@keyframes work-bar-fill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/* Admin navigation keeps the sidebar fixed while the destination settles. */
+.content { position: relative; }
+.admin-scene { min-width: 0; }
+.admin-scene > .page-heading:not(.dashboard-heading) {
+  animation: work-admin-enter 240ms var(--motion-ease-out) both;
+}
+.admin-scene > :is(.records-panel, .panel, .stats-grid, .dashboard-grid, .flow-filter, .flow-admin-list, .flow-stack, .flow-followup-layout, .business-layout, .history-grid, .insight-metrics, .insight-main, .security-account) {
+  animation: work-admin-enter 260ms var(--motion-ease-out) both;
+}
+.admin-scene > .dashboard-grid.lower,
+.admin-scene > .insight-main:nth-of-type(n+3) { animation-delay: 35ms; }
+.stats-grid .stat-card,
+.insight-metrics article {
+  animation: work-row-enter 300ms var(--motion-ease-out) both;
+}
+.stats-grid .stat-card:nth-child(2), .insight-metrics article:nth-child(2) { animation-delay: 35ms; }
+.stats-grid .stat-card:nth-child(3), .insight-metrics article:nth-child(3) { animation-delay: 70ms; }
+.stats-grid .stat-card:nth-child(4), .insight-metrics article:nth-child(4) { animation-delay: 105ms; }
+.table-scroll { animation: work-admin-enter 180ms var(--motion-ease-out) both; }
+
+/* Filtered lists and newly returned records arrive as discrete rows. */
+.flow-admin-row,
+.flow-stack > :is(.flow-notification, .flow-application),
+.business-entry,
+.member-recommend-list article,
+.flow-followup-history article,
+.history-section article {
+  animation: work-row-enter 230ms var(--motion-ease-out) both;
+}
+.flow-admin-row:nth-child(2), .flow-stack > :is(.flow-notification, .flow-application):nth-child(2), .business-entry:nth-child(2), .member-recommend-list article:nth-child(2) { animation-delay: 25ms; }
+.flow-admin-row:nth-child(3), .flow-stack > :is(.flow-notification, .flow-application):nth-child(3), .business-entry:nth-child(3), .member-recommend-list article:nth-child(3) { animation-delay: 50ms; }
+.flow-admin-row:nth-child(4), .flow-stack > :is(.flow-notification, .flow-application):nth-child(4), .business-entry:nth-child(4), .member-recommend-list article:nth-child(4) { animation-delay: 75ms; }
+.flow-admin-row:nth-child(n+5), .flow-stack > :is(.flow-notification, .flow-application):nth-child(n+5), .business-entry:nth-child(n+5), .member-recommend-list article:nth-child(n+5) { animation-delay: 100ms; }
+.admin-scene tbody tr,
+.activity,
+.species-row,
+.insight-items > div {
+  animation: work-soft-enter 230ms var(--motion-ease-out) both;
+}
+.admin-scene tbody tr:nth-child(2), .activity:nth-child(2), .species-row:nth-child(2), .insight-items > div:nth-child(2) { animation-delay: 25ms; }
+.admin-scene tbody tr:nth-child(3), .activity:nth-child(3), .species-row:nth-child(3), .insight-items > div:nth-child(3) { animation-delay: 50ms; }
+.admin-scene tbody tr:nth-child(n+4), .activity:nth-child(n+4), .species-row:nth-child(n+4), .insight-items > div:nth-child(n+4) { animation-delay: 75ms; }
+
+/* Member flows keep each step distinct without making data entry wait. */
+.member-auth-image { animation: work-photo-enter 680ms var(--motion-ease-out) both; }
+.member-auth-image > div { animation: work-surface-enter 450ms var(--motion-ease-out) 80ms both; }
+.member-auth-card { animation: work-surface-enter 430ms var(--motion-ease-out) 95ms both; }
+.member-welcome { animation: work-surface-enter 380ms var(--motion-ease-out) both; }
+.member-main > :is(.member-tabs, .flow-stack, .flow-profile, .member-recommendations, .flow-apply) {
+  animation: work-surface-enter 280ms var(--motion-ease-out) both;
+}
+.member-main > .member-tabs { animation-delay: 45ms; }
+.member-tabs button { position: relative; border-bottom-color: transparent !important; transition: color 150ms ease; }
+.member-tab-indicator { position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: var(--accent); border-radius: 2px 2px 0 0; }
+.security-panel, .security-account { animation: work-surface-enter 360ms var(--motion-ease-out) both; }
+.security-section:nth-child(2) { animation: work-surface-enter 300ms var(--motion-ease-out) 50ms both; }
+.security-section:nth-child(n+3) { animation: work-surface-enter 300ms var(--motion-ease-out) 90ms both; }
+
+/* A selected option responds immediately; detail and dialog are the slower phase. */
+.flow-filter button,
+.business-item,
+.record-pager button,
+.member-top nav a,
+.member-top nav button,
+.security-back,
+.flow-text-button {
+  transition: color 150ms ease, background-color 150ms ease, border-color 150ms ease, transform 130ms var(--motion-ease-out);
+}
+.flow-filter button:active, .member-tabs button:active, .catalog-chips button:active, .business-item:active, .button:active:not(:disabled) { transform: scale(.985); }
+.dialog-backdrop { animation: work-backdrop-enter 160ms var(--motion-ease-out) both; }
+.dialog, .flow-review-dialog { animation: work-dialog-enter 230ms var(--motion-ease-out) both; }
+.business-end, .security-code { animation: work-surface-enter 220ms var(--motion-ease-out) both; }
+.flow-success, .flow-error, .security-success, .security-error, .error-box { animation: work-row-enter 210ms var(--motion-ease-out) both; }
+input:not([type='checkbox']), select, textarea { transition: border-color 140ms ease, background-color 140ms ease; }
+.progress i, .insight-bars b { transform-origin: left center; animation: work-bar-fill 520ms var(--motion-ease-out) both; }
+
+.nav-item { position: relative; }
+.nav-item.active { border-left-color: transparent; }
+.nav-item::before { content: ''; position: absolute; width: 2px; left: -2px; top: 6px; bottom: 6px; background: #de5541; transform: scaleY(0); transform-origin: center; transition: transform 190ms var(--motion-ease-out); }
+.nav-item.active::before { transform: scaleY(1); }
+
+@media (hover: hover) and (pointer: fine) {
+  .flow-admin-row > svg:last-child,
+  .quick-links a > svg:last-child,
+  .member-recommend-list article > a svg,
+  .catalog-apply svg,
+  .topbar-actions a svg { transition: transform 160ms var(--motion-ease-out); }
+  .flow-admin-row:hover > svg:last-child,
+  .quick-links a:hover > svg:last-child,
+  .member-recommend-list article > a:hover svg,
+  .catalog-apply:hover svg,
+  .topbar-actions a:hover svg { transform: translateX(4px); }
+  .business-item:hover { background: #f6f8f4; }
+  .flow-notification:hover, .flow-application:hover { border-color: #b9c9b9; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root:not([data-motion='full']) :is(.admin-scene > *, .stats-grid .stat-card, .insight-metrics article, .table-scroll, .admin-scene tbody tr, .activity, .species-row, .insight-items > div, .flow-admin-row, .flow-stack > *, .business-entry, .member-recommend-list article, .flow-followup-history article, .history-section article, .member-auth-image, .member-auth-image > div, .member-auth-card, .member-welcome, .member-main > *, .security-panel, .security-account, .security-section, .dialog-backdrop, .dialog, .flow-review-dialog, .business-end, .security-code, .flow-success, .flow-error, .security-success, .security-error, .error-box, .progress i, .insight-bars b) {
+    animation: work-soft-enter 160ms var(--motion-ease-out) both !important;
+  }
+  :root:not([data-motion='full']) .nav-item::before { transition-duration: .01ms !important; }
+}

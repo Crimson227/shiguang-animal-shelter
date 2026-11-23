@@ -1,0 +1,16 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+*.log
+.DS_Store
+ai.local.json
+AnimalShelterMySQL/
+server/community-photos/
+server/photo-drafts/
+server/imgs/animals/animal-photo-*
+credentials.json
+session-secret
+backup.key
+*.asbackup

@@ -1,0 +1,93 @@
+.assistant-page{height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+.assistant-page>.social-header{flex:none;min-height:86px;padding-block:16px}
+.assistant-page>main{flex:1;min-height:0;display:flex;flex-direction:column;padding:24px 0 20px}
+.assistant-page .assistant-intro{flex:none;gap:35px;align-items:center;margin-bottom:20px}
+.assistant-page .assistant-intro h1{font-size:clamp(28px,2.8vw,42px);line-height:1.3;margin-bottom:8px}
+.assistant-page .assistant-intro h1 br{display:none}
+.assistant-page .assistant-intro>div>p{margin:0;font-size:13px;line-height:1.7}
+.assistant-page .assistant-boundary{font-size:12px;line-height:1.8;margin:0}
+.assistant-page .assistant-layout{flex:1;min-height:0;grid-template-columns:220px minmax(0,1fr);gap:4vw;padding-top:18px}
+.assistant-page .assistant-context{min-height:0;overflow:auto;padding-right:12px;scrollbar-color:#b5b0a5 #f8f7f3;scrollbar-width:thin}
+.assistant-page .assistant-context>summary{font-family:'Shiguang Serif',serif;font-size:21px;padding:8px 0 16px;min-height:44px;cursor:pointer}
+.assistant-page .assistant-context-content>a{display:flex;align-items:center;gap:8px;min-height:44px;font-size:12px;color:#b83f2c}
+.assistant-page .assistant-context-content>small{display:block;margin-top:18px;font-size:11px;line-height:1.8;color:var(--social-muted)}
+.assistant-page .assistant-context-content>p{margin-top:0}
+.assistant-page .assistant-conversation{display:flex;flex-direction:column;min-height:0;max-width:none;overflow:hidden}
+.assistant-toolbar{flex:none;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;padding-bottom:8px;border-bottom:1px solid var(--social-line)}
+.assistant-toolbar>span{font-size:12px;color:var(--social-muted)}
+.assistant-toolbar>div{display:flex;align-items:center;gap:16px}
+.assistant-page .assistant-toolbar button{border:0;padding:7px 0;min-height:36px;font-size:12px;color:var(--social-muted)}
+.assistant-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#b5b0a5 #f8f7f3;padding:20px 20px 24px 0;scroll-padding:20px}
+.assistant-page .assistant-starters{padding:6px 0 20px}
+.assistant-page .assistant-starters h2{font-size:24px}
+.assistant-page .assistant-starters button{font-size:13px;padding:15px 0}
+.assistant-page .assistant-message{padding:12px 0 18px;border:0;margin-bottom:18px}
+.assistant-page .assistant-message h2{font-size:12px;margin-bottom:10px;color:var(--social-muted)}
+.assistant-page .assistant-message p{font-size:14px;line-height:1.95;max-width:72ch}
+.assistant-page .assistant-message.user{max-width:85%;width:fit-content;margin-left:auto;background:#eeeae2;padding:12px 18px;border-radius:2px}
+.assistant-page .assistant-message details{margin-top:12px}
+.assistant-page .assistant-message summary{min-height:36px;padding:8px 0}
+.assistant-page .assistant-compose{flex:none;margin:0;padding-top:10px;background:var(--social-paper)}
+.assistant-input-shell{border:1px solid var(--social-line);padding:10px 12px;background:var(--social-paper)}
+.assistant-input-shell:focus-within{outline:2px solid var(--social-accent);outline-offset:2px}
+.assistant-page .assistant-compose textarea{border:0;outline:none;background:transparent;padding:2px 0;min-height:44px;max-height:120px;resize:none;line-height:1.7;scrollbar-width:thin;font-size:14px}
+.assistant-page .assistant-compose textarea:focus-visible{outline:none}
+.assistant-input-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:6px}
+.assistant-input-actions>span{font-size:11px;color:var(--social-muted);font-variant-numeric:tabular-nums}
+.assistant-input-actions>div{display:flex;gap:10px;align-items:center}
+.assistant-page .assistant-input-actions button{min-height:40px;padding:8px 13px;font-size:12px}
+.assistant-page .assistant-input-actions .social-primary{min-height:40px;padding:8px 16px}
+.assistant-page .assistant-compose .assistant-keyboard-hint{display:block;margin:8px 0 0;font-size:11px;line-height:1.5;color:var(--social-muted)}
+.assistant-page .assistant-unavailable{padding:16px 0}
+.assistant-page .assistant-unavailable h2{font-size:25px}
+@media(max-width:900px){.assistant-page .assistant-layout{grid-template-columns:180px minmax(0,1fr);gap:25px}}
+@media(max-width:600px){
+ .assistant-page>.social-header{padding:12px 6%;gap:4px;min-height:0}
+ .assistant-page>.social-header .social-brand{font-size:23px;line-height:1.5}
+ .assistant-page .social-header nav{gap:4px 18px}
+ .assistant-page .social-header nav a{min-height:36px}
+ .assistant-page>main{padding:14px 0 max(10px,env(safe-area-inset-bottom));width:88%}
+ .assistant-page .assistant-intro{gap:5px;margin-bottom:12px;align-items:flex-start}
+ .assistant-page .assistant-intro h1{font-size:25px;margin:0}
+ .assistant-page .assistant-intro>div>p{display:none}
+ .assistant-page .assistant-boundary{font-size:10px;line-height:1.6}
+ .assistant-page .assistant-layout{display:flex;flex-direction:column;gap:10px;padding-top:6px}
+ .assistant-page .assistant-context{flex:none;border-bottom:1px solid var(--social-line);padding:0;max-height:34dvh}
+ .assistant-page .assistant-context>summary{font:14px/1.8 'Shiguang Serif',serif;padding:10px 0;min-height:44px}
+ .assistant-page .assistant-context-content{padding:0 0 12px}
+ .assistant-page .assistant-context-content>a{display:inline-flex;margin-right:18px}
+ .assistant-page .assistant-context-content>small{margin-top:6px}
+ .assistant-page .assistant-conversation{flex:1}
+ .assistant-page .assistant-toolbar{min-height:34px;padding-bottom:4px}
+ .assistant-page .assistant-toolbar button{min-height:32px}
+ .assistant-scroll{padding:12px 6px 16px 0}
+ .assistant-page .assistant-starters h2{font-size:20px}
+ .assistant-page .assistant-starters button{padding:12px 0;font-size:12px}
+ .assistant-page .assistant-message{padding:8px 0 12px;margin-bottom:12px}
+ .assistant-page .assistant-message.user{padding:10px 12px;max-width:92%}
+ .assistant-page .assistant-message p{font-size:13px}
+ .assistant-page .assistant-compose{padding-top:6px}
+ .assistant-input-shell{padding:8px 10px}
+ .assistant-page .assistant-compose textarea{font-size:16px;min-height:40px;max-height:96px}
+ .assistant-page .assistant-compose .assistant-keyboard-hint{font-size:10px;margin-top:6px}
+}
+
+.assistant-page .assistant-compose>.assistant-input-shell{display:block;margin-top:0}
+
+.assistant-page .assistant-input-shell:focus-within{outline-offset:-2px}
+.assistant-page .assistant-compose textarea{box-shadow:none}
+
+/* Give the composer priority when the keyboard reduces the visual viewport. */
+.assistant-page[data-short-viewport=true] .assistant-intro{display:none}
+.assistant-page[data-short-viewport=true]>main{padding-top:8px;padding-bottom:8px}
+.assistant-page[data-short-viewport=true] .assistant-layout{padding-top:0;gap:6px}
+.assistant-page[data-short-viewport=true] .assistant-context{max-height:clamp(44px,calc(var(--assistant-viewport-height) - 380px),120px)}
+.assistant-page[data-short-viewport=true] .assistant-toolbar{min-height:32px;padding-bottom:4px}
+.assistant-page[data-short-viewport=true] .assistant-compose{padding-top:6px}
+.assistant-page[data-short-viewport=true] .assistant-compose textarea{min-height:36px;max-height:64px}
+.assistant-page[data-tight-viewport=true]>.social-header{min-height:0;padding-block:6px;gap:0}
+.assistant-page[data-tight-viewport=true]>.social-header .social-brand{font-size:21px;line-height:1.5}
+.assistant-page[data-tight-viewport=true]>.social-header nav{display:none}
+.assistant-page[data-tight-viewport=true] .assistant-compose textarea{max-height:48px}
+
+.social-page.assistant-page{min-height:0}
