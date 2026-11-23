@@ -20,13 +20,16 @@ async function main() {
     }
 
     await page.goto('/catalog');
-    const animalLink = page.locator('a[href^="/catalog/"]').first();
+    const animalLink = page.locator('a.catalog-detail').first();
     await animalLink.waitFor();
     const href = await animalLink.getAttribute('href');
     const animal = catalog.find(row => href === '/catalog/' + row.animalID);
     assert.ok(animal);
-    await animalLink.click();
-    await page.getByRole('heading', { name: animal.animalName, exact: true }).first().waitFor();
+    await page.locator('a.catalog-detail[href="' + href + '"]').click();
+    await page.waitForURL(new URL(href, baseURL).href);
+    const title = page.locator('h1').filter({ hasText: animal.animalName });
+    await title.waitFor();
+    assert.equal((await title.textContent()).trim(), animal.animalName + '。');
     const detail = await (await api.get('/api' + href)).json();
     assert.ok(detail.description && detail.restrictions);
     const posts = await (await api.get('/api/community/posts')).json();
